@@ -1,89 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ayano Systems - Motivational Quotes</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #121212;
-      color: #e0e0e0;
-      margin: 0;
-      padding: 2rem;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    h1 {
-      text-align: center;
-      color: #ff4c4c;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    li {
-      background: #222;
-      margin-bottom: 1rem;
-      padding: 1rem;
-      border-radius: 6px;
-      box-shadow: 0 0 10px #ff4c4c33;
-    }
-    form {
-      margin-top: 2rem;
-      background: #222;
-      padding: 1rem;
-      border-radius: 6px;
-    }
-    input, textarea, button {
-      width: 100%;
-      padding: 0.7rem;
-      margin-top: 0.5rem;
-      border-radius: 4px;
-      border: none;
-      font-size: 1rem;
-      font-family: inherit;
-    }
-    button {
-      background-color: #ff4c4c;
-      color: white;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #e04343;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ayano Systems - Motivational Quotes</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  h1 {
+    color: #ff4c4c;
+    text-align: center;
+  }
+  article {
+    background: #222;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #ff4c4c33;
+  }
+  h2 {
+    color: #ff6666;
+    margin-top: 0;
+  }
+  hr {
+    border: 1px solid #444;
+    margin: 20px 0;
+  }
+  blockquote {
+    font-style: italic;
+    color: #aaa;
+    border-left: 4px solid #ff4c4c;
+    margin-left: 0;
+    padding-left: 10px;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  ul li {
+    margin: 8px 0;
+  }
+  p {
+    line-height: 1.5;
+  }
+</style>
 </head>
 <body>
-  <h1>Ayano Systems - Motivational Quotes</h1>
 
-  <ul id="quotes-list">
-    <li>"The only limit to our realization of tomorrow is our doubts of today." – Franklin D. Roosevelt</li>
-    <li>"Success is not final, failure is not fatal: It is the courage to continue that counts." – Winston Churchill</li>
+<h1>Ayano Systems - Motivational Quotes</h1>
+
+<!-- Quote #1 -->
+<article>
+  <h2>🔱 1. Control Your Mind Like a Weapon</h2>
+  <p>These characters mastered their thoughts:</p>
+  <ul>
+    <li><strong>Ayanokōji:</strong> Trained from birth to suppress emotions and act with pure logic.</li>
+    <li><strong>Light:</strong> Memorized entire legal books and ruled with confidence.</li>
+    <li><strong>L:</strong> Thinks 10 steps ahead, even when tired or sleep-deprived.</li>
   </ul>
 
-  <form id="quote-form">
-    <label for="quote-text">Add a new motivational quote or book excerpt:</label>
-    <textarea id="quote-text" rows="4" placeholder="Type your quote here..." required></textarea>
-    <button type="submit">Add Quote</button>
-  </form>
+  <blockquote>🧠 Train Your Brain:</blockquote>
+  <ul>
+    <li>Meditation (10 mins/day) – Learn to quiet your inner chaos and stay focused under pressure.</li>
+    <li>Self-reflection journal – Analyze your actions daily like L does.</li>
+    <li>No excuses mindset – Remove "I can’t," "I’m tired," or "later" from your vocabulary.</li>
+  </ul>
+  <hr />
+  <h2>📚 2. Study Like a Tactician, Not a Student</h2>
+  <p>Don't just "study." Dominate subjects by turning them into a strategy game.</p>
 
-  <script>
-    const form = document.getElementById('quote-form');
-    const quotesList = document.getElementById('quotes-list');
+  <blockquote>🔥 Elite Methods:</blockquote>
+  <ul>
+    <li>Feynman Technique: Explain the concept in your own words like you're teaching a child. If you can’t, you don’t truly understand it.</li>
+    <li>Pomodoro + Interleaving: 50 min study, 10 min break. Mix subjects to boost recall.</li>
+    <li>Past papers & timed drills: Think like you're under surveillance, every move tested.</li>
+  </ul>
+  <hr />
+  <h2>📖 3. Consume Dangerous Knowledge</h2>
+  <p>Light read criminal law at 17. Ayanokōji mastered manipulation. L knew psychology, forensics, and cryptography.</p>
 
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const text = document.getElementById('quote-text').value.trim();
-      if (text) {
-        const li = document.createElement('li');
-        li.textContent = `"${text}"`;
-        quotesList.appendChild(li);
-        form.reset();
-      }
-    });
-  </script>
+  <blockquote>⚡ Learn these:</blockquote>
+  <ul>
+    <li>Psychology: Influence, cognitive bias, memory.</li>
+    <li>Logic and critical thinking: Spot fallacies and break arguments.</li>
+    <li>Mathematics and deduction: Train with Olympiad-level problems.</li>
+  </ul>
+  <p><strong>📘 Books:</strong></p>
+  <ul>
+    <li><em>How to Read a Book</em> – Adler (become a master reader)</li>
+    <li><em>Influence</em> – Cialdini (like how Light manipulates)</li>
+    <li><em>The Art of War</em> – Sun Tzu (Ayanokōji in every chapter)</li>
+  </ul>
+  <hr />
+  <h2>🧊 4. Emotional Detachment = Power</h2>
+  <p>To be godlike, don’t let emotions cloud logic.</p>
+
+  <blockquote>🎯 Practice:</blockquote>
+  <ul>
+    <li>In arguments, never react emotionally. Think: “What’s their motive?”</li>
+    <li>In failure, don’t cry — analyze what went wrong.</li>
+    <li>Treat compliments and insults equally — stay unaffected.</li>
+  </ul>
+  <hr />
+  <h2>🧠 5. Memory Training = Infinite Ammo</h2>
+  <ul>
+    <li>Use Anki flashcards to remember everything.</li>
+    <li>Create mind palaces like Sherlock or L.</li>
+    <li>Memorize books or legal codes, just because you can.</li>
+  </ul>
+  <hr />
+  <h2>🔒 6. Discipline Is Your Core</h2>
+  <p>These geniuses don’t rely on motivation.</p>
+  <blockquote>☑ Build habits like:</blockquote>
+  <ul>
+    <li>Wake up early, every day — no exceptions</li>
+    <li>Daily 3-hour “deep work” zone (no phone, no noise)</li>
+    <li>Track your goals like missions — log everything you do</li>
+  </ul>
+  <hr />
+  <h2>💬 7. Be Silent, Observe Everything</h2>
+  <p>Ayanokōji didn’t talk unless needed. L stared. Light calculated.</p>
+  <ul>
+    <li>Talk less in groups. Listen more.</li>
+    <li>Observe body language, tone, hesitation — find weaknesses.</li>
+    <li>Every person is a case study. Learn from their flaws.</li>
+  </ul>
+  <hr />
+  <h2>🔓 Bonus: Turn School into a Game of Control</h2>
+  <ul>
+    <li>Use charm strategically, not emotionally</li>
+    <li>Earn trust of teachers, understand how the system rewards marks</li>
+    <li>Create alliances when needed, and never reveal your full ability</li>
+  </ul>
+  <hr />
+  <h2>🩸 Want to go full Ayanokōji-mode?</h2>
+  <blockquote>
+    "I don’t need validation. I seek only results. People are pieces. Emotions are tools. Control is everything."
+  </blockquote>
+</article>
+
+<!-- Add new quotes by copy-pasting this article block and editing content -->
+
 </body>
 </html>
