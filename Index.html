@@ -1,10 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Ayano Systems</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayano Systems - Motivational Quotes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #ff4c4c;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      background: #222;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px #ff4c4c33;
+    }
+    form {
+      margin-top: 2rem;
+      background: #222;
+      padding: 1rem;
+      border-radius: 6px;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.5rem;
+      border-radius: 4px;
+      border: none;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+    button {
+      background-color: #ff4c4c;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e04343;
+    }
+  </style>
 </head>
-<body style="text-align:center; margin-top:100px;">
-  <h1>Welcome to Ayano Systems</h1>
-  <p><em>God feared us, so they erased us.</em></p>
+<body>
+  <h1>Ayano Systems - Motivational Quotes</h1>
+
+  <ul id="quotes-list">
+    <li>"The only limit to our realization of tomorrow is our doubts of today." – Franklin D. Roosevelt</li>
+    <li>"Success is not final, failure is not fatal: It is the courage to continue that counts." – Winston Churchill</li>
+  </ul>
+
+  <form id="quote-form">
+    <label for="quote-text">Add a new motivational quote or book excerpt:</label>
+    <textarea id="quote-text" rows="4" placeholder="Type your quote here..." required></textarea>
+    <button type="submit">Add Quote</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('quote-form');
+    const quotesList = document.getElementById('quotes-list');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const text = document.getElementById('quote-text').value.trim();
+      if (text) {
+        const li = document.createElement('li');
+        li.textContent = `"${text}"`;
+        quotesList.appendChild(li);
+        form.reset();
+      }
+    });
+  </script>
 </body>
 </html>
